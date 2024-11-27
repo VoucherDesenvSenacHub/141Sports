@@ -1,0 +1,133 @@
+#tarja-contato {
+    width: 100%;
+    height: 70px;
+    background-color: #413E40;
+}
+
+#tarja-contato p {
+    color: white;
+    font-size: 25px;
+    font-family: 'Inter', sans-serif;
+    text-align: center;
+    padding: 20px;
+
+}
+
+#contato {
+    display: flex;
+    flex-direction: row;
+    margin-top: 4%;
+    gap: 200px;
+    margin-left: 100px;
+}
+
+#form-contato form {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+#form-contato form input {
+    border-radius: 100px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+    background-color: #E8E8E8;
+    height: 40px;
+    width: 400px;
+    border: none;
+    box-shadow: inset 0px 3px rgb(0, 0, 0, 0.1)
+}
+
+#form-contato form #textareaContato {
+    height: 100px;
+    border-radius: 15px;
+    border: none;
+    box-shadow: inset 0px 3px rgb(0, 0, 0, 0.1);
+    
+}
+
+#form-contato form button {
+    border-radius: 100px;
+    width: 150px;
+    height: 40px;
+    margin-top: 15px;
+    background-color: #006414;
+    color: #FFFFFF;
+    border: none;
+}
+
+::placeholder {
+    color: #000000;
+    opacity: 0.4;
+    padding: 10px;
+}
+
+.align-wppTelefone {
+    display: flex;
+
+    & p{ 
+        margin-left: 5px;
+    }
+}
+
+#contato #text-contato h1 {
+    font-size: 50px;
+}
+
+#contato #text-contato p {
+    margin-top: 10px;
+}
+
+#contato #text-contato h4 {
+    margin-top: 15px;
+}
+
+.img-wpp {
+    width: 25px;
+    height: 25px;
+    margin-top: 8px
+}
+
+.img-wpp img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+#perguntas {
+    margin-top: 3%;
+    margin-left: 100px;
+    width: 1250px;
+}
+
+#perguntas #caixa-perguntas .card-pergunta .div-pergunta {
+    display: flex;
+    padding: 5px;
+}
+
+#perguntas #caixa-perguntas .card-pergunta {
+    padding: 10px;
+}
+
+#perguntas #caixa-perguntas .card-pergunta .article-card {
+    display: none;
+}
+
+#perguntas #caixa-perguntas .card-pergunta .article-card.ativo {
+    display: block;
+}
+
+#perguntas #caixa-perguntas .card-pergunta .div-pergunta button {
+    border: none;
+    color: black;
+    background-color: transparent;
+    padding: 2px;
+    margin-left: 7px;
+}
+
+#perguntas #caixa-perguntas .line-pergunta {
+    background-color: #000000;
+    opacity: 0.2;
+    height: 1px;
+    width: 100%;
+}
