@@ -1,6 +1,8 @@
 <?php 
 
 class Fornecedor {
+    
+    public $idFornecedor;
     public $nomeFornecedor;
 	public $cnpj;
 	public $contato;
