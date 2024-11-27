@@ -110,13 +110,11 @@
                 </div>
             </div>
             
-            <div class="btn-cadastrar">
+            <div class="btn-cadastrar"> 
                 <input type="submit" name="btn-cadastrar" value="CADASTRAR" id="cadastrar">
             </div>
 
             <p class="fazer-login">Já possui login? <a href="#">Faça login</a></p>
-
-
         </form>
 
     </section>
