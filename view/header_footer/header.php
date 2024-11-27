@@ -69,22 +69,23 @@
 
         <div class="logo">
             <a class="a-header" href="#">
-                <img src="../templates/icones/headerlogo.png" alt="logo" width="90px" height="90px">
+                <img src="../icones/headerlogo.png" alt="logo" width="90px" height="90px">
             </a>
         </div>
 
         <nav id="nav-header">
             <ul class="nav-list">
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Brasileirão</a></li>
-                <li><a href="#">Seleções</a></li>
+                <li><a href="../contato/contato.php">Inicio</a></li>
+                <li><a href="../brasileirao/brasileirao.php">Brasileirão</a></li>
+                <li><a href="../selecao/selecao.php">Seleções</a></li>
+                <li><a href="../favoritos/favoritos.php">Favoritos</a></li>
                 <li><a href="#">Contato</a></li>
                 <li><a href="#">Sobre Nós</a></li>
             </ul>
         </nav>
         <div class="perfil">
             <a href="#">
-                <img src="../templates/icones/headerperfil.png" alt="perfil" width="50px" height="50px">
+                <img src="../icones/headerperfil.png" alt="perfil" width="50px" height="50px">
             </a>
         </div>
     </header>

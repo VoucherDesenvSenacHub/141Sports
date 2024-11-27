@@ -82,7 +82,7 @@
             </div>
 
             <div class="patrocinadores-footer">
-                <img src="../templates/icones/parceiros.png" alt="">
+                <img src="../icones/parceiros.png" alt="">
             </div>
 
             <div class="direitos-footer">
@@ -95,14 +95,14 @@
 
             <div class="email-footer">
                 <a  class="link-footer" href="#">
-                    <img src="../templates/icones/email1.png" width="31px" height="31px" alt="email">
+                    <img src="../icones/email1.png" width="31px" height="31px" alt="email">
                     <p>CONTATO@141SPORTS.COM.BR</p>
                 </a>
             </div>
 
             <div class="zap-footer">
                 <a  class="link-footer" href="#">
-                    <img src="../templates/icones/whatsapp.png" width="31px" height="31px" alt="whatsapp">
+                    <img src="../icones/whatsapp.png" width="31px" height="31px" alt="whatsapp">
                     <p>+556799999-9999</p>
                 </a>
             </div>
@@ -110,7 +110,7 @@
         </section>
 
         <section class="right-side-footer">
-            <img src="../templates/icones/LogoHub.png" width="237" height="162" alt="senac">
+            <img src="../icones/LogoHub.png" width="237" height="162" alt="senac">
         </section>
 
     </footer>
