@@ -2,19 +2,13 @@
 
 class Produto {
 
-    private $conexao;
-    private $table = 'camisa';
+    private $table = 'produto';
     public $idProduto;
-    public $nomeCamisa;
-    public $idFornecedor;
-    public $categoriaCamisa;
-    public $temporada;
-    public $valor;
-
-    public $tamanhoDisponivel;
-    public $img;
-
-
-
+    public $tamanhoProd;
+    public $imagemProd;
+    public $valorProd;
+    public $nomeProd;
+    public $descricaoProd;
+    public $idCatalogo;
 
 }
