@@ -1,5 +1,8 @@
 <?php
 
+require_once '/database.php';
+echo "Arquivo incluído com sucesso!";
+
 class Produto {
 
     private $conexao;
@@ -10,11 +13,7 @@ class Produto {
     public $categoriaCamisa;
     public $temporada;
     public $valor;
-
     public $tamanhoDisponivel;
     public $img;
-
-
-
 
 }
