@@ -20,6 +20,7 @@ CREATE TABLE contato (
   emailCtt varchar(100) not null ,
   mensagem varchar(300) not null
 );
+#cmnotinmyfault
 CREATE TABLE cidade (
   id int primary key,
   cidade varchar(100) not null,
@@ -115,6 +116,7 @@ CREATE TABLE estoque (
   id int primary key auto_increment,
   qtdEstoque int not null,
   idProduto int not null
+<<<<<<< HEAD
 );
 
 
@@ -130,3 +132,6 @@ CREATE TABLE estoque (
 
 
 
+=======
+);
+>>>>>>> 924cd089fa42a3932873504be3a9eccfcce037f2

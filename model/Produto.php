@@ -5,9 +5,9 @@ echo "Arquivo incluído com sucesso!";
 
 class Produto {
 
-    private $conexao;
-    private $table = 'camisa';
+    private $table = 'produto';
     public $idProduto;
+<<<<<<< HEAD
     public $nomeCamisa;
     public $idFornecedor;
     public $categoriaCamisa;
@@ -15,5 +15,13 @@ class Produto {
     public $valor;
     public $tamanhoDisponivel;
     public $img;
+=======
+    public $tamanhoProd;
+    public $imagemProd;
+    public $valorProd;
+    public $nomeProd;
+    public $descricaoProd;
+    public $idCatalogo;
+>>>>>>> 924cd089fa42a3932873504be3a9eccfcce037f2
 
 }
