@@ -4,7 +4,7 @@
 <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="favoritos.css">
+        <link rel="stylesheet" href="style.css">
         <title>Favoritos</title>
 </head>
 
@@ -13,7 +13,7 @@ include('../header_footer/header.php');
 ?>
 
 <body>
-        <h2 class="favorito-title">Favoritos</h2>
+        <h2 class="favorito-title">Seleções</h2>
         <section class="main">
 
                 <div class="card-camisa">
@@ -27,7 +27,7 @@ include('../header_footer/header.php');
                         <button class="carrinho">
                                 <img src="./camisetas/carrinho.png" alt="carrinho">
                         </button>
-                        <p class="excluirCamisa"><a href="#"> Excluir</a></p>
+                        
 
                 </div>
                 <div class="card-camisa">
@@ -41,7 +41,7 @@ include('../header_footer/header.php');
                         <button class="carrinho">
                                 <img src="./camisetas/carrinho.png" alt="carrinho">
                         </button>
-                        <p class="excluirCamisa"><a href="#"> Excluir</a></p>
+                        
 
                 </div>
                 <div class="card-camisa">
@@ -55,7 +55,7 @@ include('../header_footer/header.php');
                         <button class="carrinho">
                                 <img src="./camisetas/carrinho.png" alt="carrinho">
                         </button>
-                        <p class="excluirCamisa"><a href="#"> Excluir</a></p>
+                        
 
                 </div>
                 <div class="card-camisa">
@@ -69,7 +69,7 @@ include('../header_footer/header.php');
                         <button class="carrinho">
                                 <img src="./camisetas/carrinho.png" alt="carrinho">
                         </button>
-                        <p class="excluirCamisa"><a href="#"> Excluir</a></p>
+                        
 
                 </div>
                 <div class="card-camisa">
@@ -83,7 +83,7 @@ include('../header_footer/header.php');
                         <button class="carrinho">
                                 <img src="./camisetas/carrinho.png" alt="carrinho">
                         </button>
-                        <p class="excluirCamisa"><a href="#"> Excluir</a></p>
+                        
 
                 </div>
                 <div class="card-camisa">
@@ -97,7 +97,7 @@ include('../header_footer/header.php');
                         <button class="carrinho">
                                 <img src="./camisetas/carrinho.png" alt="carrinho">
                         </button>
-                        <p class="excluirCamisa"><a href="#"> Excluir</a></p>
+                        
 
                 </div>
                 <div class="card-camisa">
@@ -111,7 +111,7 @@ include('../header_footer/header.php');
                         <button class="carrinho">
                                 <img src="./camisetas/carrinho.png" alt="carrinho">
                         </button>
-                        <p class="excluirCamisa"><a href="#"> Excluir</a></p>
+                        
 
                 </div>
                 <div class="card-camisa">
@@ -125,8 +125,7 @@ include('../header_footer/header.php');
                         <button class="carrinho">
                                 <img src="./camisetas/carrinho.png" alt="carrinho">
                         </button>
-                        <p class="excluirCamisa"><a href="#"> Excluir</a></p>
-
+                        
                 </div>
                 <div class="card-camisa">
                         <div class="box-camisa">
@@ -139,7 +138,7 @@ include('../header_footer/header.php');
                         <button class="carrinho">
                                 <img src="./camisetas/carrinho.png" alt="carrinho">
                         </button>
-                        <p class="excluirCamisa"><a href="#"> Excluir</a></p>
+                        
 
                 </div>
                 <div class="card-camisa">
@@ -153,7 +152,7 @@ include('../header_footer/header.php');
                         <button class="carrinho">
                                 <img src="./camisetas/.png" alt="carrinho">
                         </button>
-                        <p class="excluirCamisa"><a href="#"> Excluir</a></p><br><br>
+                        
 
                 </div>
 
