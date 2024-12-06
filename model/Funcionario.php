@@ -18,7 +18,7 @@ class Funcionario {
     public $senha;
     public $table = 'funcionario';
    
-}
+
 
 public function __construct( $cpf,$nome, $email, $nivelAcesso, $setor,$senha) {
   
@@ -30,6 +30,7 @@ public function __construct( $cpf,$nome, $email, $nivelAcesso, $setor,$senha) {
     $this->senha = $senha;
    
 }
+#-------------------------  tirar o metodo cadastrar e deletar do funcionario ----------
 
 public function cadastrar() {
     $query "INSERT INTO funcionrio (cpf, nome, email, nivelAcesso, setor, senha) VALUES ('" . $this->cpf . "', '" . $this->nome . "',
@@ -45,8 +46,16 @@ public function deletar(){
     return $resultado;
 }
 
+#-----------------------------------_____________-------------------------------------------
+
+
+# confir depois  arrumar o atualizar e mostrar 
+
 public function atualizar($nome_mudado){
     $query = "UPDATE {$this->tabela} SET nome = '{$nome_mudado}' WHERE nome = '{$this->nome}';";
+    $query = "UPDATE {$this->tabela} SET nome = '{$nome_mudado}' WHERE cpf = '{$this->cpf}';";
+    $query = "UPDATE {$this->tabela} SET nome = '{$nome_mudado}' WHERE email = '{$this->email}';";
+    $query = "UPDATE {$this->tabela} SET nome = '{$nome_mudado}' WHERE senha = '{$this->senha}';";
 
     $resultado = $this->conexao->query($query);
     return $resultado;
@@ -57,4 +66,6 @@ public function mostrar($cpf){
 
     $resultado = $this->conexao->query($query);
     return $resultado;
+}
+
 }
