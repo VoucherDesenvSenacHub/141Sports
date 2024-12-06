@@ -1,4 +1,5 @@
 <?php
+require_once "../config/database.php"
 
 class Usuario {
     
@@ -9,35 +10,69 @@ class Usuario {
     public $telefone;
     public $genero;
     public $senha;
-    public $endereco;
 
-    public $tabela = 'cliente';
+    private $tabela = 'cliente';
+    private $conexao;
 
-    public function __construct($infoUSuario) {
-        $this->endereco = $newEndereco = new Endereco($infoUSuario['endereco']);
+    public function __construct($bd) {
+        $this->conexao = $bd;
     }
 
-    public function cadastrar(){
-        $query = "INSERT INTO {$this->tabela}(nome, cpf, email, dataNasc, telefone, genero, senha) VALUES('{$this->nome}', '{$this->cpf}', '{$this->email}', '{$this->dataNasc}', '{$this->telefone}', '{$this->genero}', '{$this->senha}');";
-
-        return $resultado = [
-            'cadastroEdereco' => $this->endereco->cadastrar(),
-            'cadastroUsuario' => $query
-        ];
-        //$resultado = $this->conexao->conectar($query);        
-
+    public function getIdUsuario($id){
+        $stmt = $this->conexao->prepare("SELECT * FROM {$this->table} WHERE id = ?");
+        $stmt->bind_param("i", $id); 
+        $stmt->execute();
+        $resultado = $stmt->get_result();
+        return $resultado->fetch_all(MYSQLI_ASSOC);
     }
 
-    public function mostrar(){
-        $query = "SELECT * FROM {$this->tabela};";        
+    public function create(){
+        $query = "INSERT INTO {$this->tabela} (nome, cpf, email, dataNasc, telefone, genero, senha) VALUES(:nome, :cpf, :email, :dataNasc, :telefone, :genero, :senha)";  
+        
+        $stms = $this->conexao->prepare($query);
+
+        $stms->bindParam(":nome", $this->nome);
+        $stms->bindParam(":cpf", $this->cpf);
+        $stms->bindParam(":email", $this->email);
+        $stms->bindParam(":dataNasc", $this->dataNasc);
+        $stms->bindParam(":telefone", $this->telefone);
+        $stms->bindParam(":genero", $this->genero);
+        $stms->bindParam(":senha", $this->senha);
+
+        return $stms->execute();
     }
 
-    public function alterar(){
-        $query = "SELECT COUNT(*) FROM {$this->tabela} WHERE id = '{$this->id_usuario}';";
+    public function read(){
+        $query = "SELECT * FROM {$this->tabela};";  
+        return $this->conexao->query($query);      
     }
 
-    public function deletar(){
-        $query = "DELETE FROM {$this->tabela} WHERE id_livro = {$this->id_usuario};";
+    public function update(){
+            $query = "UPDATE {$this->tabela} 
+                      SET :nome, :cpf, :email, :dataNasc, :telefone, :genero, :senha, 
+                      WHERE id = :id";
+        
+            $stmt = $this->conexao->prepare($query);
+        
+      
+            $stms->bindParam(":nome", $this->nome);
+            $stms->bindParam(":cpf", $this->cpf);
+            $stms->bindParam(":email", $this->email);
+            $stms->bindParam(":dataNasc", $this->dataNasc);
+            $stms->bindParam(":telefone", $this->telefone);
+            $stms->bindParam(":genero", $this->genero);
+            $stms->bindParam(":senha", $this->senha);
+
+            return $stmt->execute();
+        }
+
+    public function delete(){
+        $query = "DELETE FROM {$this->tabela} WHERE id = :id";
+        $stmt = $this->conexao->prepare($query);
+
+        $stmt->bindParam(':id', $this->id, PDO::PARAM_INT);
+
+        return $stmt->execute();
     }
 
 
