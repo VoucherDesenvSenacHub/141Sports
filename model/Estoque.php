@@ -7,7 +7,11 @@ class Estoque {
     public $qtdDisponivel;
     public $idProduto;
 
-    public function getEstoque(){
+    public function __construct($con)
+    {
+        $this->conexao = $bd;
+    }
+    public function getEstoque($nomeCamisa){
         return $this->qtdDisponivel;
     }
 
