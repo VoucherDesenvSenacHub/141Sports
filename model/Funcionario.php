@@ -15,7 +15,7 @@ class Funcionario {
     public $email;
     public $nivelAcesso;
     public $setor;
-    public $senha
+    public $senha;
     public $table = 'funcionario';
    
 }
@@ -38,7 +38,7 @@ public function cadastrar() {
     $resultado = $this->conexao->query($query);
     return $resultado;
 }
-public function delete(){
+public function deletar(){
     $query = "DELETE FROM {$this->tabela} WHERE id = {$this->cpf};";
 
     $resultado = $this->conexao->query($query);
@@ -52,7 +52,7 @@ public function atualizar($nome_mudado){
     return $resultado;
 }
 
-public function mostra($cpf){
+public function mostrar($cpf){
     $query "SELECT * FROM {$this->tabela} WHERE id = {$this->cpf}; ";
 
     $resultado = $this->conexao->query($query);
