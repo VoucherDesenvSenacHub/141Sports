@@ -36,7 +36,7 @@ public function cadastrar() {
     $resultado = $this->conexao->query($query);
     return $resultado;
 }
-public function delete(){
+public function deletar(){
     $query = "DELETE FROM {$this->tabela} WHERE id = {$this->idProduto};";
 
     $resultado = $this->conexao->query($query);
@@ -50,7 +50,7 @@ public function atualizar($nome_mudado){
     return $resultado;
 }
 
-public function mostra($idProduto){
+public function mostrar($idProduto){
     $query "SELECT * FROM {$this->tabela} WHERE id = {$this->idProduto}; ";
 
     $resultado = $this->conexao->query($query);
